@@ -1,101 +1,193 @@
 [
   {
+    "name": "Menu",
+    "sect": "Informacion",
+    "desc": "Ver una lista de todos los comandos",
+    "cooldown": null,
+    "example": [
+      "#menu"
+    ]
+  },
+  {
     "name": "RollWaifu",
     "sect": "Gacha",
     "desc": "Rollear una waifu aleatoria la cual puede ser claimeada con el comando #claim.",
     "cooldown": "5 minutos. (300 segundos)",
-    "example": ["#rollwaifu", "#rw"]
+    "example": [
+      "#rollwaifu",
+      "#rw"
+    ]
   },
   {
     "name": "Claim",
     "sect": "Gacha",
-    "desc": "Claimear una waifu que mando el bot con #rollwaifu. (se tiene que mencionar el mensaje).",
+    "desc": "Reclamar un personaje que mando el bot con #rollwaifu. (se tiene que mencionar el mensaje).",
     "cooldown": "15 minutos. (900 segundos)",
-    "example": ["#claim", "#c"]
+    "example": [
+      "#claim",
+      "#c"
+    ]
   },
   {
     "name": "Waifus",
     "sect": "Gacha",
     "desc": "Ver todas tus waifus o las de algun miembro.",
     "cooldown": null,
-    "example": ["#waifus", "#waifus <@mencion>"]
+    "example": [
+      "#waifus",
+      "#waifus <@mencion>"
+    ]
   },
   {
     "name": "Vote",
     "sect": "Gacha",
-    "desc": "Votar a una waifu para subir su valor en 10 puntos.",
+    "desc": "Votar a una waifu para subir su valor.\nSi se vota a un personaje que tenga un valor menor a 120, el cooldown del comando sera reducido a 30 minutos.",
     "cooldown": "1 hora. (3600 segundos)",
-    "example": ["#vote [waifu]", "#waifus zero two"]
+    "example": [
+      "#vote [waifu]",
+      "#waifus zero two"
+    ]
+  },
+  {
+    "name": "AnimeList",
+    "sect": "Gacha",
+    "desc": "Ver una lista de todos los animes en el bot.",
+    "cooldown": null,
+    "example": [
+      "#animes",
+      "#animelist",
+      "#listanime"
+    ]
+  },
+  {
+    "name": "SearchWaifu",
+    "sect": "Gacha",
+    "desc": "Buscar un personaje por nombre.",
+    "cooldown": null,
+    "example": [
+      "#searchwaifu [nombre]",
+      "#searchwaifu zero",
+      "#swaifu rem",
+      "#waifusearch ram"
+    ]
   },
   {
     "name": "WaifuGive",
     "sect": "Gacha",
-    "desc": "Regalar una waifu a algun usuario.",
+    "desc": "Regalar un personaje a algun usuario.",
     "cooldown": null,
-    "example": ["#waifugive [waifu] [@mencion]", "#waifugive zero two @mencion"]
+    "example": [
+      "#waifugive [waifu] [@mencion]",
+      "#givewaifu zero two @mencion"
+    ]
   },
   {
     "name": "WaifuDel",
     "sect": "Gacha",
     "desc": "Eliminar alguna de tus waifus reclamadas.",
     "cooldown": null,
-    "example": ["#waifudel [waifu]", "#waifudel zero two"]
+    "example": [
+      "#waifudel [waifu]",
+      "#waifudel zero two",
+      "#delwaifu zero two",
+      "#waifudelete zero two"
+    ]
+  },
+  {
+    "name": "WaifuImage",
+    "sect": "Gacha",
+    "desc": "Enviar una imagen random de un personaje.",
+    "cooldown": null,
+    "example": [
+      "#wimage [waifu]",
+      "#waifuimage zero two"
+    ]
   },
   {
     "name": "WaifuInfo",
     "sect": "Gacha",
-    "desc": "Ver informacion de una waifu.",
+    "desc": "Ver informacion sobre un personaje.",
     "cooldown": null,
-    "example": ["#waifuinfo [waifu]", "#waifuinfo zero two"]
+    "example": [
+      "#waifuinfo [waifu]",
+      "#infowaifu zero two"
+    ]
   },
   {
     "name": "AnimeInfo",
     "sect": "Gacha",
     "desc": "Ver el estado de todas las waifus de algun anime.",
     "cooldown": null,
-    "example": ["#animeinfo [anime]", "#waifuinfo re zero"]
+    "example": [
+      "#animeinfo [anime]",
+      "#infoanime re zero"
+    ]
   },
   {
     "name": "GachaInfo",
     "sect": "Gacha",
     "desc": "Ver informacion de gacha (Cooldown del #claim, #rollwaifu y #vote).",
     "cooldown": null,
-    "example": ["#GachaInfo"]
+    "example": [
+      "#GachaInfo",
+      "#ginfo",
+      "#infogacha"
+    ]
   },
   {
     "name": "WaifusBoard",
     "sect": "Gacha",
-    "desc": "Ver el top de waifus con mas valor.",
+    "desc": "Ver el top de personajes con mas valor.",
     "cooldown": null,
-    "example": ["#waifusboard"]
+    "example": [
+      "#waifusboard",
+      "#wboard",
+      "#waifustop",
+      "#topwaifus"
+    ]
   },
   {
     "name": "Work",
     "sect": "Economy",
-    "desc": "Trabajar para ganar entre 1500 y 2500 Coins.",
+    "desc": "Trabajar para ganar entre 2000 y 3000 Coins.",
     "cooldown": null,
-    "example": ["#waifusboard"]
+    "example": [
+      "#work"
+    ]
   },
   {
     "name": "Balance",
     "sect": "Economy",
     "desc": "Ver cuantas Coins tienes o ver cuantas Coins tiene algun usuario.",
     "cooldown": null,
-    "example": ["#balance"]
+    "example": [
+      "#balance",
+      "#bal",
+      "#balance @Usuario"
+    ]
   },
   {
     "name": "EconomyBoard",
     "sect": "Economy",
     "desc": "Ver la leaderboard de personas con mas Coins en el grupo.",
     "cooldown": null,
-    "example": ["#economyboard"]
+    "example": [
+      "#economyboard",
+      "#eboard",
+      "#balancetop",
+      "#baltop"
+    ]
   },
   {
-    "name": "GiveMoney",
+    "name": "GiveCoins",
     "sect": "Economy",
     "desc": "Regalar Coins a algun usuario en el grupo. (El minimo es de 1000 Coins)",
     "cooldown": null,
-    "example": ["#givemoney [@mencion] [cantidad]", "#givemoney @mencion 50000"]
+    "example": [
+      "#givecoins [@mencion] [cantidad]",
+      "#givemoney @mencion 50000",
+      "#pay @mencion 50000"
+    ]
   },
   {
     "name": "Roulette",
@@ -113,35 +205,39 @@
     "sect": "Economy",
     "desc": "Apostar Coins en Cara o Cruz, Ganaras el doble de lo que apostaste si la moneda cae en cruz.",
     "cooldown": null,
-    "example": ["#coinflip [cantidad]", "#coinflip 50000"]
+    "example": [
+      "#coinflip [cantidad]",
+      "#coinflip 50000"
+    ]
   },
   {
     "name": "Guess",
     "sect": "Economy",
     "desc": "Apostar Coins en un numero aleatorio del 1 al 5, ganaras el triple de lo que apostaste si adivinas el numero",
     "cooldown": null,
-    "example": ["#guess [numero del 1-5] [cantidad]", "#guess 3 50000"]
+    "example": [
+      "#guess [numero del 1-5] [cantidad]",
+      "#guess 3 50000",
+      "#guess 1 15000"
+    ]
   },
   {
     "name": "Level",
     "sect": "Leveling",
     "desc": "Ver tu informacion de leveling.",
     "cooldown": null,
-    "example": ["#level"]
+    "example": [
+      "#level"
+    ]
   },
   {
     "name": "Leaderboard",
     "sect": "Leveling",
     "desc": "Ver la leaderboard global de usuarios con mas xp.",
     "cooldown": null,
-    "example": ["#leaderboard"]
-  },
-  {
-    "name": "Theme",
-    "sect": "Leveling",
-    "desc": "Cambiar los colores de la imagen que manda el comando #level. (Para ver una lista de Temas disponibles usa el comando #themes)",
-    "cooldown": null,
-    "example": ["#theme discord", "#theme default"]
+    "example": [
+      "#leaderboard"
+    ]
   },
   {
     "name": "Sticker",
@@ -150,38 +246,58 @@
     "cooldown": null,
     "example": [
       "#sticker",
-      "#sticker [autor]|[pack]",
+      "#s [autor]|[pack]",
       "#sticker Anime | Bot",
-      "#sticker Anime"
+      "#s Anime"
     ]
-  },
-  {
-    "name": "StickerWM",
-    "sect": "Stickers",
-    "desc": "Convertir una imagen/gif a un sticker con datos personalizados.",
-    "cooldown": null,
-    "example": ["#sticker [autor]|[pack]", "#stickerwm Anime | Bot"]
   },
   {
     "name": "MetaOverride",
     "sect": "Stickers",
     "desc": "Reenviar un sticker con tu nombre como autor.",
     "cooldown": null,
-    "example": ["#metaoverride"]
+    "example": [
+      "#metaoverride"
+    ]
+  },
+  {
+    "name": "Play",
+    "sect": "Misc",
+    "desc": "Descargar una cancion de YouTube.",
+    "cooldown": null,
+    "example": [
+      "#play [texto]"
+    ]
+  },
+  {
+    "name": "tagall",
+    "sect": "Misc",
+    "desc": "Mencionar a todos los participantes del grupo.",
+    "cooldown": null,
+    "example": [
+      "#tagall",
+      "#tagsay [texto]"
+    ]
   },
   {
     "name": "SimSimi",
-    "sect": "Stickers",
+    "sect": "Misc",
     "desc": "Hablar con simsimi.",
     "cooldown": null,
-    "example": ["#simsimi [texto]", "#simsimi hola"]
+    "example": [
+      "#simsimi [texto]",
+      "#simi hola"
+    ]
   },
   {
     "name": "Say",
     "sect": "Misc",
     "desc": "Repetir un texto.",
     "cooldown": null,
-    "example": ["#say [texto]", "#say este texto sera repetido por el bot."]
+    "example": [
+      "#say [texto]",
+      "#say este texto sera repetido por el bot."
+    ]
   },
   {
     "name": "TTS",
@@ -194,29 +310,13 @@
     ]
   },
   {
-    "name": "Idiomas",
-    "sect": "Misc",
-    "desc": "Ver una lista de todos los idiomas soportados por el comando #tts",
-    "cooldown": null,
-    "example": ["#idiomas"]
-  },
-  {
     "name": "Ping",
     "sect": "Misc",
     "desc": "Ver cuanto tarda el bot en procesar un mensaje. (Sirve para ver si el bot esta vivo o no)",
     "cooldown": null,
-    "example": ["#ping"]
-  },
-  {
-    "name": "Math",
-    "sect": "Misc",
-    "desc": "Realizar calculos matematicos.",
-    "cooldown": null,
     "example": [
-      "#math 10*50",
-      "#math sen(75)",
-      "#math cos(45)",
-      "#math 10cm to inch"
+      "#ping",
+      "#p"
     ]
   },
   {
@@ -224,42 +324,67 @@
     "sect": "Misc",
     "desc": "Ver el estado del bot. (RAM%, CPU y mensajes procesados)",
     "cooldown": null,
-    "example": ["#status"]
+    "example": [
+      "#status"
+    ]
+  },
+  {
+    "name": "delete",
+    "sect": "Misc",
+    "desc": "Eliminar un mensaje del bot",
+    "cooldown": null,
+    "example": [
+      "#delete",
+      "#del"
+    ]
   },
   {
     "name": "Runtime",
     "sect": "Misc",
     "desc": "Ver hace cuanto tiempo esta encendida el bot.",
     "cooldown": null,
-    "example": ["#runtime"]
+    "example": [
+      "#runtime"
+    ]
   },
   {
     "name": "GetPic",
     "sect": "Misc",
     "desc": "Mandar la imagen de perfil de algun usuario (se tiene que usar mencionando un usuario).",
     "cooldown": null,
-    "example": ["#getpic [@mencion]", "#getpic @mencion"]
+    "example": [
+      "#getpic [@mencion]",
+      "#getpic @mencion"
+    ]
   },
   {
     "name": "Report",
     "sect": "Misc",
     "desc": "Reportar algun bug/error.",
     "cooldown": null,
-    "example": ["#report [texto]", "#report Texto explicando el error/bug."]
+    "example": [
+      "#report [texto]",
+      "#report Texto explicando el error/bug."
+    ]
   },
   {
     "name": "Msg",
     "sect": "Misc",
     "desc": "Mandar alguna sugerencia al Dueñ@ del bot.",
     "cooldown": null,
-    "example": ["#msg [texto]", "#msg Texto explicando la sugerencia."]
+    "example": [
+      "#msg [texto]",
+      "#msg Texto explicando la sugerencia."
+    ]
   },
   {
     "name": "PîckRandom",
     "sect": "Misc",
-    "desc": "Elegir un numero PseudoRandom entre 0 y el numero mencionado. (Si no se especifica un numero se elegira un numero del 0 al 100)",
+    "desc": "Elegir un numero PseudoRandom entre 0 y 100",
     "cooldown": null,
-    "example": ["#pickrandom <numero>", "#pickrandom", "#pickrandom 500"]
+    "example": [
+      "#pickrandom"
+    ]
   },
   {
     "name": "SafeBooru",
@@ -268,7 +393,7 @@
     "cooldown": null,
     "example": [
       "#safebooru [tags]",
-      "#safebooru rem_(re:zero)",
+      "#sbooru rem_(re:zero)",
       "#safebooru rem_(re:zero) -m"
     ]
   },
@@ -277,62 +402,89 @@
     "sect": "Imagenes",
     "desc": "Mandar un GIF dandole una cachetada a alguien.",
     "cooldown": null,
-    "example": ["#slap [@mencion]", "#slap"]
+    "example": [
+      "#slap [@mencion]",
+      "#slap"
+    ]
   },
   {
     "name": "Kiss",
     "sect": "Imagenes",
     "desc": "Mandar un GIF dandole un beso a alguien.",
     "cooldown": null,
-    "example": ["#kiss", "#kiss [@mencion]"]
+    "example": [
+      "#kiss",
+      "#kiss [@mencion]"
+    ]
   },
   {
     "name": "Hug",
     "sect": "Imagenes",
     "desc": "Mandar un GIF dandole un abrazo a alguien.",
     "cooldown": null,
-    "example": ["#hug", "#hug [@mencion]"]
+    "example": [
+      "#hug",
+      "#hug [@mencion]"
+    ]
   },
   {
     "name": "Pat",
     "sect": "Imagenes",
     "desc": "Mandar un GIF dandole caricias a algun usuario.",
     "cooldown": null,
-    "example": ["#pat", "#pat [@mencion]"]
+    "example": [
+      "#pat",
+      "#pat [@mencion]"
+    ]
   },
   {
     "name": "Punch",
     "sect": "Imagenes",
     "desc": "Mandar un GIF dandole un golpe a alguien.",
     "cooldown": null,
-    "example": ["#kiss", "#kiss [@mencion]"]
+    "example": [
+      "#kiss",
+      "#kiss [@mencion]"
+    ]
   },
   {
     "name": "NHDownload",
     "sect": "NSFW",
     "desc": "Descargar y mandar un PDF de nhentai. (solo se pueden descargar PDFs con menos de 40 paginas)",
     "cooldown": null,
-    "example": ["#nhdownload [codigo]", "#nhdownload 287883"]
+    "example": [
+      "#nhdownload [codigo]",
+      "#nhdownload 287883"
+    ]
   },
   {
     "name": "NHentai",
     "sect": "NSFW",
     "desc": "Ver informacion de algun PDF en la pagina NHentai.",
     "cooldown": null,
-    "example": ["#nhdownload [codigo]", "#nhdownload 287883"]
+    "example": [
+      "#nhdownload [codigo]",
+      "#nhdownload 287883"
+    ]
   },
   {
     "name": "Rule34",
     "sect": "NSFW",
     "desc": "Buscar imagenes con un tag en especifico en la pagina Rule34.<br>Se puede añadir '-m' a la busqueda para mandar 4 imagenes.",
     "cooldown": null,
-    "example": ["#rule34 [tags]", "#rule34 rem_(re:zero) -m"]
+    "example": [
+      "#rule34 [tags]",
+      "#rule34 rem_(re:zero) -m"
+    ]
   },
   {
     "name": "Gelbooru",
     "sect": "NSFW",
     "desc": "Buscar imagenes con un tag en especifico en la pagina Rule34.<br>Se puede añadir '-m' a la busqueda para mandar 4 imagenes.",
     "cooldown": null,
-    "example": ["#gelbooru [tags]", "#gelbooru rem_(re:zero) -m"]
+    "example": [
+      "#gelbooru [tags]",
+      "#gbooru rem_(re:zero) -m"
+    ]
   }
 ]
